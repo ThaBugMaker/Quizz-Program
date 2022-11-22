@@ -38,14 +38,6 @@ const quizData = [
         c: "Fuck Yeah!",
         d: "No, they are morons",
         correct: "c",
-    },
-    {
-        question: "هل يمكن استعمال اللغة العربية",
-        a: "لا",
-        b: "نعم",
-        c: "",
-        d: "",
-        correct: "c",
     }
 ];
 const quiz= document.getElementById('quiz')

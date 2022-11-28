@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+    <link rel="stylesheet" href="/public/admin.css" />
+    <script src="/public/admin.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <!-- For Hidden Err Message -->
+      <div id="error"></div>
+      <!-- Form Handeling -->
+      <form method="GET" action="/" id="form">
+        <div class="txtField">
+          <input
+            type="text"
+            required
+            name="username"
+            autocomplete="off"
+            id="username"
+            placeholder="Username"
+            autofocus="on"
+          />
+        </div>
+        <div class="txtField">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <!-- Costumized link  -->
+        <div class="passForget" title="isDisable" id="passRec">
+          <p class="disabledlink">Forget Password?</p>
+        </div>
+        <input type="submit" value="Login" />
+        <div class="signupLink">
+          Not an Admin?
+          <a class="disabledlink" title="isDisable">Contact us</a>.
+        </div>
+      </form>
+    </div>
+    <footer class="foo">
+      <p>Quizy &copy; All Right Reserverd 2022</p>
+    </footer>
+  </body>
+</html>

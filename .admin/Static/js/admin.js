@@ -11,7 +11,11 @@ forgetPassword.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
   let messages = [];
   if (name.value === "username") {
-    messages.push("Username cannot be `username`");
+    messages.push(`Username cannot be 'username'`);
+  }
+
+  if (name.value.length <= 5) {
+    messages.push("Username must be 6 characters or longer");
   }
 
   if (password.value.length <= 6) {
@@ -21,7 +25,7 @@ form.addEventListener("submit", (e) => {
     messages.push("Password must be less than 18 characters");
   }
   if (password.value === "password") {
-    messages.push("Password cannot be `password`");
+    messages.push(`Password cannot be 'password'`);
   }
   if (messages.length > 0) {
     e.preventDefault();

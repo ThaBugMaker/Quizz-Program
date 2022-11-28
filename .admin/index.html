@@ -24,6 +24,7 @@
             autocomplete="off"
             id="username"
             placeholder="Username"
+            autofocus="on"
           />
         </div>
         <div class="txtField">
@@ -35,13 +36,13 @@
           />
         </div>
         <!-- Costumized link  -->
-        <div class="passForget" id="passRec">Forget Password?</div>
+        <div class="passForget" title="isDisable" id="passRec">
+          <p class="disabledlink">Forget Password?</p>
+        </div>
         <input type="submit" value="Login" />
         <div class="signupLink">
           Not an Admin?
-          <a href="#" onclick="alert('THIS LINK IS NOT ENABLED YET!')"
-            >Contact us</a
-          >.
+          <a class="disabledlink" title="isDisable">Contact us</a>.
         </div>
       </form>
     </div>

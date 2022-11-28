@@ -61,12 +61,12 @@ form .txtField {
 .passForget {
   margin: -5px 0 20px 5px;
   color: #777676;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
-.passForget:hover {
+/* .passForget:hover {
   text-decoration: underline;
-}
+} */
 
 input[type="submit"] {
   width: 100%;
@@ -97,9 +97,9 @@ input[type="submit"]:hover {
   text-decoration: none;
 }
 
-.signupLink a:hover {
+/* .signupLink a:hover {
   text-decoration: underline;
-}
+} */
 
 #error {
   color: #f81313;
@@ -107,6 +107,12 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
+.disabledlink {
+  width: fit-content;
+  user-select: none;
+  cursor: not-allowed;
+  text-decoration: none;
+}
 .foo {
   display: flex;
   justify-content: center;

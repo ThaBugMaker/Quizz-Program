@@ -4,17 +4,18 @@ let forgetPassword = document.getElementById("passRec");
 const form = document.getElementById("form");
 const errorElement = document.getElementById("error");
 
-forgetPassword.addEventListener("click", () => {
-  alert("THIS LINK IS NOT ENABLED YET!");
-});
+// forgetPassword.addEventListener("click", (e) => {
+//   alert("THIS LINK IS NOT ENABLED YET!");
+// });
 
 form.addEventListener("submit", (e) => {
   let messages = [];
+
+  if (name.value !== "Admin") {
+    messages.push(`Username incorrect`);
+  }
   if (name.value === "username") {
     messages.push(`Username cannot be 'username'`);
-  }
-  if (name.value === 0 - 9) {
-    messages.push(`Number are not allowed`);
   }
 
   if (name.value.length <= 4) {

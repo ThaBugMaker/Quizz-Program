@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: url("../media/authBG.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #c7e1fad0;
+  border-radius: 10px;
+  background-blend-mode: overlay;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 0 0 1em 0;
+  border-bottom: 1px solid silver;
+}
+
+.center form {
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+form .txtField {
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtField input {
+  background-color: #c7e1faee;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid silver;
+  border-radius: 5px;
+}
+
+.passForget {
+  margin: -5px 0 20px 5px;
+  color: #777676;
+  cursor: pointer;
+}
+
+.passForget:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-color: #1678be;
+  color: #bfdaf0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  border-color: #1678be;
+  transition: 0.3s;
+}
+
+.signupLink {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+
+.signupLink a {
+  color: #1678be;
+  text-decoration: none;
+}
+
+.signupLink a:hover {
+  text-decoration: underline;
+}
+
+#error {
+  color: #f81313;
+  text-align: center;
+  font-weight: bold;
+}
+
+.foo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #666666;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* MEDIA QUERY'S  */
+@media screen and (min-width: 768px) {
+  .center {
+    transform: translate(50%, -50%);
+    background-color: #bfdaf0;
+  }
+}

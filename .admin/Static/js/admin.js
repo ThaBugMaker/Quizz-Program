@@ -13,9 +13,12 @@ form.addEventListener("submit", (e) => {
   if (name.value === "username") {
     messages.push(`Username cannot be 'username'`);
   }
+  if (name.value === 0 - 9) {
+    messages.push(`Number are not allowed`);
+  }
 
-  if (name.value.length <= 5) {
-    messages.push("Username must be 6 characters or longer");
+  if (name.value.length <= 4) {
+    messages.push("Username must be 5 characters or longer");
   }
 
   if (password.value.length <= 6) {

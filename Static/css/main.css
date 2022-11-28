@@ -12,10 +12,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
   margin: 0;
 }
+
 .quiz-container {
   background-color: #dcfacf;
   border-radius: 10px;
@@ -60,8 +62,12 @@ button:focus {
   outline: none;
   background-color: #44b927;
 }
-@media screen and (max-width: 768px){
-  .quiz-container{
+.adminlink {
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .quiz-container {
     width: 340px;
   }
   .quiz-header {
